@@ -59,6 +59,10 @@ a:hover {
     color: red;
 }
 
+@media (orientation: landscape) {
+    /* */
+}
+
 @media (orientation: portrait) {
     html {
         font-size: 2.75vw;
