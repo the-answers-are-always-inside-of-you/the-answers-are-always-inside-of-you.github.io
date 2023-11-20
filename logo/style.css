@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Times Dot";
+    src: url("times-dot/TimesDotRom.otf"),
+        url("times-dot/TimesDotBol.otf"),
+        url("times-dot/TimesDot-Italic.otf");
+}
+
+@font-face {
+    font-family: "Times New Roman";
+    src: url("times.ttf");
+}
+
+html {
+    font-size: 16px;
+    height: -webkit-fill-available;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.dot {
+    font-family: "Times Dot", "Times New Roman", Times, serif;
+}
+
+.times {
+    font-family: "Times New Roman", Times, serif;
+}
+
+@font-face {
+    font-family: "MS Mincho";
+    src: url("https://pe-hu.github.io/ver/font/MSMincho.ttc");
+}
+
+@font-face {
+    font-family: "SimSong";
+    src: url("https://pe-hu.github.io/ver/font/SimSong.ttc");
+}
+
+.pehu {
+    color: #000;
+    font-family: "MS Mincho", "SimSong", serif;
+    font-size: 111%;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a {
+    transition: color 1s;
+}
+
+a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+@media (orientation: portrait) {
+    html {
+        font-size: 2.75vw;
+    }
+}

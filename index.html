@@ -1,1 +1,75 @@
-200 OK
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!--og:meta-->
+    <meta content="website" property="og:type">
+    <title>i choose | The Answers are always inside of you</title>
+    <meta content="i choose | The Answers are always inside of you" property="og:title">
+    <meta content="i choose は、創造的チャレンジへの積極性を養い、従来の価値観／方法にとらわれない開かれた考え方を養うことを目的とする創造的娯楽ゲームです。" name="description">
+    <meta content="i choose は、創造的チャレンジへの積極性を養い、従来の価値観／方法にとらわれない開かれた考え方を養うことを目的とする創造的娯楽ゲームです。" name="og:description">
+
+    <!--for Twitter-->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://the-answers-are-always-inside-of-you.github.io/" property="og:url">
+    <meta content="https://the-answers-are-always-inside-of-you.github.io/img/cover.jpg" property="og:image">
+    <meta content="https://the-answers-are-always-inside-of-you.github.io/img/cover.jpg" name="twitter:image:src">
+
+    <link rel="icon" href="logo/icon.png" type="image/png">
+    <link rel="stylesheet" href="logo/style.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <style>
+        #cover h2 {
+            font-size: 111%;
+            place-self: end center;
+        }
+
+        #cover h1::before {
+            content: 'The Answers are always inside of you';
+            display: block;
+            font-size: 150%;
+            margin-bottom: 10vh;
+        }
+    </style>
+
+    <script>
+        const random = [
+            "img/001.jpg",
+            "img/002.jpg",
+            "img/003.jpg",
+            "img/004.jpg",
+            "img/005.jpg",
+            "img/006.jpg",
+            "img/007.jpg",
+            "img/008.jpg",
+            "img/009.jpg",
+            "img/010.jpg",
+            "img/011.jpg",
+            "img/012.jpg",
+            "img/013.jpg"
+        ];
+    </script>
+    <script src="img/randomBG.js"></script>
+</head>
+
+<body>
+    <header id="cover">
+        <h1 class="dot">ichoose.pe.hu</h1>
+        <h2 class="times">
+            by creative, community space
+            <a class="pehu" href="https://pehu.creative-community.space/" target="_blank">∧°┐</a>
+        </h2>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="logo/jquery.arctext.js"></script>
+    <script>
+        $('h1').arctext({ radius: 75 });
+    </script>
+</body>
+
+</html>
