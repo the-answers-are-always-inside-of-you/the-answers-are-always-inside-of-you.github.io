@@ -39,6 +39,7 @@ ___
 
 ### [フレームワークなしの Node.js サーバ](https://developer.mozilla.org/ja/docs/Learn/Server-side/Node_server_without_framework)
 
+[Node.js のビルドとテスト](https://docs.github.com/ja/actions/automating-builds-and-tests/building-and-testing-nodejs)
 
 ***
 * [Ubuntu 18.04、20.04、および 22.04 に Node.js と NPM をインストールする3つの方法](https://www.hostinger.com/tutorials/how-to-install-node-ubuntu)
