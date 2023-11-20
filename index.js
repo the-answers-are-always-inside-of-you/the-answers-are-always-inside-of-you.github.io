@@ -7,7 +7,7 @@ var path = require("path");
 const server = http.createServer((req, res) => {
     var filePath = "." + req.url;
     if (filePath == "./") {
-        filePath = "./200.html";
+        filePath = "./index.html";
     }
 
     var extname = String(path.extname(filePath)).toLowerCase();
