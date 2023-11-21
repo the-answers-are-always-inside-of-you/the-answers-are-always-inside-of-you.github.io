@@ -47,10 +47,10 @@ function by50Q(by) {
             dialogModal.close();
         });
 
-        type.addEventListener('click', () => {
+        youare.addEventListener('click', () => {
             onModal()
             const who = document.querySelector('#who');
-            who.textContent = type.dataset.name;
+            who.textContent = type.name;
         });
     }
 }
