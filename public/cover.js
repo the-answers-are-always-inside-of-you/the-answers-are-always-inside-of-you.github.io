@@ -22,12 +22,6 @@ document.addEventListener('readystatechange', event => {
     }, 2000);
     sentenceGenerator();
   } else if (event.target.readyState === 'complete') {
-    const cover = document.querySelector("#cover")
-
-    if (cover.dataset.click) {
-      cover.addEventListener('click', function () {
-        location.href = cover.dataset.click
-      })
-    }
+    //
   }
 });

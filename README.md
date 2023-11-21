@@ -1,46 +1,34 @@
+私たちはあなたにいくつかの質問を用意します。
+
+それは、あなたを緊張させるためのストレートな質問ではなく、とても簡単でシンプルな質問です。
+もしかするとあなたはそれらの質問を退屈に感じるかもしれません。（なぜなら、それがあまりにもたわいのない質問だから）
+
+あなたに時間と好奇心があるのであれば、是非私たちの質問に付き合って下さいませんか。
+私たちはあなたがそれらの質問を楽しみ、新しい気持ちでそこを去ることができることを願っています。
 
 
-[Node.js®について](https://nodejs.org/en/about)
-```
-const http = require('http');
-const hostname = '127.0.0.1';
-const port = 3000;
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
-```
-___
+We have some questions for you.
 
-[Node.js 版 Hello world](https://nodejs.keicode.com/nodejs/hello-nodejs.php)
-* node -v (Node.js のバージョン確認)
-* npm -v (npm "Node Package Manager" のバージョン確認)
-* npm init -y (ディレクトリ内にpackage.jsonを作成)
+It's not a straight question to tension you, it's a very easy and simple question.
+You may find those questions boring. (Because it is a question that is too stupid)
 
-ディレクトリを操作するコマンド
-* mkdir ディレクトリを作成
-* rmdir ディレクトリを削除
-* cd ディレクトリへ移動
-
-***
-
-## npm start
-package.json の scripts.start に指定された内容を実行する
-
-実行中のプロセスを終了するコマンド
-* Ctrl + c
-* Ctrl + c の次に　Ctrl + d
+If you have time and curiosity, could you make time for our questions?
+We hope you enjoy our questions and hope you get new feelings when leave there.
 
 ___
 
-### [フレームワークなしの Node.js サーバ](https://developer.mozilla.org/ja/docs/Learn/Server-side/Node_server_without_framework)
+Q: この展覧会はどこで開催されますか？
+What is an exhibition venue?
 
-[Node.js のビルドとテスト](https://docs.github.com/ja/actions/automating-builds-and-tests/building-and-testing-nodejs)
+A: BnA Alter Museum
+267-1 Tenmacho, Shimogyo-ku, Kyoto-shi, Kyoto-fu.
 
-***
-* [Ubuntu 18.04、20.04、および 22.04 に Node.js と NPM をインストールする3つの方法](https://www.hostinger.com/tutorials/how-to-install-node-ubuntu)
-* [Learning with VS Code on Chromebooks](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started)
+Q: この展覧会の鑑賞可能時間は？
+What time will open this exhibition?
+
+A: 11am - 2am
+
+Q: 入場料はかかりますか？
+How much is the entrance fee?
+
+A: It's Free. we are open for everyone
