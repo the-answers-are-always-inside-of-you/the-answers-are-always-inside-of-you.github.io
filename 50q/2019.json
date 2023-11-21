@@ -1,0 +1,607 @@
+{
+    "by" : "∧°┐",
+    "types" : [
+        {
+            "id" : "a_plus",
+            "title": "A+",
+            "name": "ayami konishi +",
+            "message": "You are Sounds Good Super Super<br><small>真逆のタイプ K2 / X</small>",
+            "url": "../10q/a/"
+        },
+        {
+            "id" : "a_minus",
+            "title": "A-",
+            "name": "ayami konishi -",
+            "message": "You are Sounds Bad Super Super<br><small>似ているタイプ W</small>",
+            "url": "../10q/a/"
+        },
+        {
+            "id" : "aa",
+            "title": "AA",
+            "name": "Ayumi Akutagawa",
+            "message": "できる女<br><small>真逆のタイプ CC</small>",
+            "url": "../10q/aa/"
+        },
+        {
+            "id" : "tk",
+            "title": "CC",
+            "name": "Kazutaka Tsutsui",
+            "message": "Cute & Cool<br><small>総合一位</small>",
+            "url": "../10q/tk/"
+        },
+        {
+            "id" : "ks",
+            "title": "K2",
+            "name": "Kazuma Sasajima",
+            "message": "You are Fuckin Elegunt",
+            "url": "../10q/ks/"
+        },
+        {
+            "id" : "kn",
+            "title": "X",
+            "name": "Kaori Nakao",
+            "message": "Keep Goin Go! Go!<br><small>Peace for Future</small>",
+            "url": "../10q/kn/"
+        },
+        {
+            "id" : "weather",
+            "title": "W",
+            "name": "Shoji Funakawa",
+            "message": "Always think about weather<br><small>お天気野郎</small>",
+            "url": "../10q/weather/"
+        }
+    ],
+
+    "questions" : [
+        {
+            "id" : "Q1",
+            "question" : "Do you like speaking loud?",
+            "jp" : "大きな声出すの好き？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q3",
+            "light_to" : "Q6"
+        },
+        {
+            "id" : "Q2",
+            "question" : "Which do you prefer?",
+            "jp" : "どっちが好き？",
+            "yes" : "(^ω^)",
+            "left" : "(^ω^)",
+            "no" : "(^.^)",
+            "right" : "(^.^)",
+            "left_to" : "Q4",
+            "light_to" : "Q9"
+        },
+        {
+            "id" : "Q3",
+            "question" : "Do you want to break it?",
+            "jp" : "壊してみたい？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q8",
+            "light_to" : "Q2"
+        },
+        {
+            "id" : "Q4",
+            "question" : "Have you ever punched somebody?",
+            "jp" : "人を殴ったことがある",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q11",
+            "light_to" : "Q9"
+        },
+        {
+            "id" : "Q5",
+            "question" : "Which do you prefer?",
+            "jp" : "大きいものと小さいものどっちが好き？",
+            "yes" : "big thing",
+            "left" : "大きいもの",
+            "no" : "small thing",
+            "right" : "小さいもの",
+            "left_to" : "Q6",
+            "light_to" : "Q7"
+        },
+        {
+            "id" : "Q6",
+            "question" : "Which describe your relationship with big trees better?",
+            "jp" : "大きな木に",
+            "yes" : "want to be them",
+            "left" : "なりたい",
+            "no" : "want to touch them",
+            "right" : "触りたい",
+            "left_to" : "Q11",
+            "light_to" : "Q10"
+        },
+        {
+            "id" : "Q7",
+            "question" : "Have you ever found a 4 leaf clover?",
+            "jp" : "四つ葉のクローバー見つけたことある？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q12",
+            "light_to" : "Q15"
+        },
+        {
+            "id" : "Q8",
+            "question" : "Which do you prefer?",
+            "jp" : "吸うのと吐くのどっちが好き？",
+            "yes" : "breath in",
+            "left" : "吸う",
+            "no" : "breath out",
+            "right" : "吐く",
+            "left_to" : "Q13",
+            "light_to" : "Q10"
+        },
+        {
+            "id" : "Q9",
+            "question" : "Have you ever acted as a bad person?",
+            "jp" : "ギャル or ヤンキーしたことある？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q12",
+            "light_to" : "Q5"
+        },
+        {
+            "id" : "Q10",
+            "question" : "Which do you prefer to be given?",
+            "jp" : "もらうならどっち？",
+            "yes" : "certificate",
+            "left" : "表彰状",
+            "no" : "medal",
+            "right" : "メダル",
+            "left_to" : "Q16",
+            "light_to" : "Q7"
+        },
+        {
+            "id" : "Q11",
+            "question" : "Have you ever earned money by lying?",
+            "jp" : "嘘をついてお金をもらったことがある",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q14",
+            "light_to" : "Q8"
+        },
+        {
+            "id" : "Q12",
+            "question" : "A coin is on the ground. What would you do?",
+            "jp" : "コインが落ちています。どうする？",
+            "yes" : "pick up",
+            "left" : "拾う",
+            "no" : "stand it",
+            "right" : "立てる",
+            "left_to" : "Q14",
+            "light_to" : "Q17"
+        },
+        {
+            "id" : "Q13",
+            "question" : "Do you want to stand up?",
+            "jp" : "立ちたい？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q18",
+            "light_to" : "Q15"
+        },
+        {
+            "id" : "Q14",
+            "question" : "Do you think you are not believing in people?",
+            "jp" : "人を信じていない",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q20",
+            "light_to" : "Q13"
+        },
+        {
+            "id" : "Q15",
+            "question" : "Do you have somebody you want to believe?",
+            "jp" : "信じていたい人がいる",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q19",
+            "light_to" : "Q20"
+        },
+        {
+            "id" : "Q16",
+            "question" : "Do you consider everything  is beautiful?",
+            "jp" : "すべてのものってきれいだと思う？",
+            "yes" : "yes i do",
+            "left" : "はい",
+            "no" : "no i don't",
+            "right" : "いいえ",
+            "left_to" : "Q19",
+            "light_to" : "Q22"
+        },
+        {
+            "id" : "Q17",
+            "question" : "Would you marry Tatsuro Yamashita if possible?",
+            "jp" : "できたら山下達郎さんと結婚したかった？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q21",
+            "light_to" : "Q16"
+        },
+        {
+            "id" : "Q18",
+            "question" : "Now I can",
+            "jp" : "今なら？",
+            "yes" : "say it",
+            "left" : "言える",
+            "no" : "not say it",
+            "right" : "言えない",
+            "left_to" : "Q24",
+            "light_to" : "Q20"
+        },
+        {
+            "id" : "Q19",
+            "question" : "Do you think somebody will do it?",
+            "jp" : "誰かがやってくれるって思う？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q18",
+            "light_to" : "Q26"
+        },
+        {
+            "id" : "Q20",
+            "question" : "Do you know your parents' birthdays?",
+            "jp" : "親の誕生日を知っていますか？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q21",
+            "light_to" : "Q25"
+        },
+        {
+            "id" : "Q21",
+            "question" : "Do you know where dog's eyes go when they sleep?",
+            "jp" : "犬が寝るとき目がどこに行くか知ってる？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q23",
+            "light_to" : "Q22"
+        },
+        {
+            "id" : "Q22",
+            "question" : "Do you think you've already met an alien before?",
+            "jp" : "宇宙人にもう既に会っていると思う？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q27",
+            "light_to" : "Q26"
+        },
+        {
+            "id" : "Q23",
+            "question" : "What's Hayabusa?",
+            "jp" : "はやぶさって何？",
+            "yes" : "asteroid explorer",
+            "left" : "小惑星探査機",
+            "no" : "a trick of jumping rope",
+            "right" : "縄跳びの技",
+            "left_to" : "Q24",
+            "light_to" : "Q30"
+        },
+        {
+            "id" : "Q24",
+            "question" : "Do you think you are alive 10 years later?",
+            "jp" : "10年後生きてると思う？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q32",
+            "light_to" : "Q28"
+        },
+        {
+            "id" : "Q25",
+            "question" : "Do you think both 100 year before and after now are not different from now",
+            "jp" : "100年前も100年後も今と変わらない",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q29",
+            "light_to" : "Q23"
+        },
+        {
+            "id" : "Q26",
+            "question" : "Do you blame yourself?",
+            "jp" : "それは自分のせいだと思う？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q32",
+            "light_to" : "Q25"
+        },
+        {
+            "id" : "Q27",
+            "question" : "Are you the very center of this world?",
+            "jp" : "自分中心に世界は回ってる？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q31",
+            "light_to" : "Q28"
+        },
+        {
+            "id" : "Q28",
+            "question" : "Are you lying?",
+            "jp" : "嘘ついてる？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q33",
+            "light_to" : "Q29"
+        },
+        {
+            "id" : "Q29",
+            "question" : "Do you feel uncomfortable when you leave food?",
+            "jp" : "ご飯を残すのに抵抗がある",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q36",
+            "light_to" : "Q30"
+        },
+        {
+            "id" : "Q30",
+            "question" : "Which attracts you more?",
+            "jp" : "どっちに惹かれる？",
+            "yes" : "Bubble Tea",
+            "left" : "タビオカミルクティー",
+            "no" : "Yogurt with Nata de coco",
+            "right" : "ナタデココ入りヨーグルト",
+            "left_to" : "Q31",
+            "light_to" : "Q35"
+        },
+        {
+            "id" : "Q31",
+            "question" : "If you are in a green field then you'd...",
+            "jp" : "広い草原を",
+            "yes" : "Run",
+            "left" : "走りたい",
+            "no" : "enjoy the scenery",
+            "right" : "眺めたい",
+            "left_to" : "Q33",
+            "light_to" : "Q34"
+        },
+        {
+            "id" : "Q32",
+            "question" : "Do you like the color green?",
+            "jp" : "緑色って好き？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q37",
+            "light_to" : "Q27"
+        },
+        {
+            "id" : "Q33",
+            "question" : "Which describes you better",
+            "jp" : "どっち",
+            "yes" : "denser",
+            "left" : "濃く",
+            "no" : "lighter",
+            "right" : "薄く",
+            "left_to" : "Q36",
+            "light_to" : "Q40"
+        },
+        {
+            "id" : "Q34",
+            "question" : "Which do you prefer?",
+            "jp" : "どっちが好き？",
+            "yes" : "broom",
+            "left" : "ほうき",
+            "no" : "vacuum",
+            "right" : "掃除機",
+            "left_to" : "Q42",
+            "light_to" : "Q37"
+        },
+        {
+            "id" : "Q35",
+            "question" : "Have you ever killed a fly with a rubber band?",
+            "jp" : "ハエを輪ゴムで仕留めたことある？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q39",
+            "light_to" : "Q43"
+        },
+        {
+            "id" : "Q36",
+            "question" : "Do you want to live longer than others?",
+            "jp" : "他人より長生きがしたい",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q38",
+            "light_to" : "Q34"
+        },
+        {
+            "id" : "Q37",
+            "question" : "Do you have something you like which you used to do not like?",
+            "jp" : "昔は嫌いだったけど今は好きなものある？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q43",
+            "light_to" : "Q38"
+        },
+        {
+            "id" : "Q38",
+            "question" : "Do you think you have things you dislike more than things you like?",
+            "jp" : "好きなものより嫌いなものの方が多い",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q41",
+            "light_to" : "Q35"
+        },
+        {
+            "id" : "Q39",
+            "question" : "Do you need a TV?",
+            "jp" : "テレビが無いと困る？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q45",
+            "light_to" : "Q40"
+        },
+        {
+            "id" : "Q40",
+            "question" : "Do you often turn off your PC? or keep it on?",
+            "jp" : "パソコンの電源ってよく切る？つけっぱなし？",
+            "yes" : "often turn it off",
+            "left" : "よく切る",
+            "no" : "keep it on",
+            "right" : "つけっばなし",
+            "left_to" : "Q42",
+            "light_to" : "Q44"
+        },
+        {
+            "id" : "Q41",
+            "question" : "Is the food your parents make bad?",
+            "jp" : "母親/父親のご飯が不味い",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q46",
+            "light_to" : "Q44"
+        },
+        {
+            "id" : "Q42",
+            "question" : "If you see a white dot on a black paper do you think the dot is a hole?",
+            "jp" : "黒い紙に白い点があったらそれは穴だと思う？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no it is a light",
+            "right" : "いいえ光っています",
+            "left_to" : "Q41",
+            "light_to" : "Q48"
+        },
+        {
+            "id" : "Q43",
+            "question" : "Do you have a plan for the next holiday?",
+            "jp" : "次の休日の予定は決まってる？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q47",
+            "light_to" : "Q39"
+        },
+        {
+            "id" : "Q44",
+            "question" : "If it is still there do you want to visit?",
+            "jp" : "まだやってたら行きたい？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q49",
+            "light_to" : "Q46"
+        },
+        {
+            "id" : "Q45",
+            "question" : "Can you speak English?",
+            "jp" : "英語しゃべれる？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "a_plus",
+            "light_to" : "a_minus"
+        },
+        {
+            "id" : "Q46",
+            "question" : "Do you dislike foreigners?",
+            "jp" : "外国人が嫌い",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "tk",
+            "light_to" : "Q48"
+        },
+        {
+            "id" : "Q47",
+            "question" : "Which describes you better?",
+            "jp" : "どっちに近い？",
+            "yes" : "100%",
+            "left" : "100%",
+            "no" : "1%",
+            "right" : "1%",
+            "left_to" : "ks",
+            "light_to" : "Q50"
+        },
+        {
+            "id" : "Q48",
+            "question" : "Do you consider this paper is white?",
+            "jp" : "この折り紙は白色だと思う？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q47",
+            "light_to" : "kn"
+        },
+        {
+            "id" : "Q49",
+            "question" : "Do you think flowers are beautiful?",
+            "jp" : "花は綺麗だと思う？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "Q45",
+            "light_to" : "aa"
+        },
+        {
+            "id" : "Q50",
+            "question" : "Do you think the weather tomorrow is good?",
+            "jp" : "明日はいい天気だと思う？",
+            "yes" : "yes",
+            "left" : "はい",
+            "no" : "no",
+            "right" : "いいえ",
+            "left_to" : "weather",
+            "light_to" : "Q49"
+        }
+    ]
+}

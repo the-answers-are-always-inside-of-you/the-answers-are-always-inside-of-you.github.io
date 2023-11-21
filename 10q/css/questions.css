@@ -1,0 +1,128 @@
+@page {
+    size: A4 landscape;
+    margin: 0;
+}
+
+.question {
+    font-family: "Times Dot", "Times New Roman", Times, serif;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+[hidden],
+.question section input {
+    display: none;
+}
+
+.question section {
+    display: flex;
+    flex-flow: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+}
+
+.question h3,
+.question section input+label,
+.question section a,
+.question small {
+    display: block;
+    text-align: center;
+}
+
+.question section input+label,
+.question section a,
+.question small {
+    padding: 0.5rem;
+}
+
+.question h3 {
+    padding: 1rem;
+}
+
+.question h3 small {
+    margin-top: 2rem;
+}
+
+@media (orientation: portrait) {
+    .question section {
+        flex-flow: column;
+        gap: 1rem;
+    }
+
+    .question section input+label,
+    .question section a {
+        padding: 1.5rem 0.5rem;
+    }
+}
+
+@media print {
+    .question {
+        height: 50vh;
+        min-height: 50vh;
+        max-height: 50vh;
+    }
+
+    .question h3 {
+        margin-top: 2.5rem;
+    }
+
+    .question h3 small {
+        margin-top: 5rem;
+    }
+}
+
+.question section::after {
+    content: "or";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.question h3 {
+    font-size: 150%;
+    font-weight: 500;
+}
+
+.question strong {
+    font-size: 125%;
+    font-weight: 500;
+}
+
+.question section input+label,
+.question section a {
+    font-size: 111%;
+    font-style: italic;
+}
+
+.question section::after {
+    font-size: 100%;
+}
+
+.question small {
+    font-size: 75%;
+    font-style: normal;
+}
+
+a,
+input+label {
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover,
+input+label:hover {
+    cursor: pointer;
+}
+
+a:hover,
+input+label:hover,
+input:checked+label {
+    color: red;
+}

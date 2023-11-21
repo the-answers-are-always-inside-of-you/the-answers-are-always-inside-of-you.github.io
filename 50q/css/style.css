@@ -1,0 +1,168 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#cover h1::after {
+    display: block;
+    font-size: 125%;
+    font-style: italic;
+    margin: 2.5rem;
+    transform: scaleX(-1);
+}
+
+#cover h1::after {
+    content: "Let's Start";
+}
+
+.restart#cover h1::after {
+    content: "Restart";
+}
+
+#cover h1::after,
+#types div {
+    transition: all 1s;
+}
+
+#types div {
+    height: 100vh;
+    max-height: -webkit-fill-available;
+}
+
+#types div:hover {
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+#cover h1 {
+    position: fixed;
+    top: 0;
+    font-size: 111%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+#cover,
+#types {
+    font-family: "Times Dot", "Times New Roman", Times, serif;
+}
+
+#cover h3 {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#cover h3 b,
+#types div,
+#types div b {
+    display: grid;
+    place-items: center;
+}
+
+#cover h3 b,
+#types div b {
+    background: #fff;
+    border: solid 0.2rem red;
+    border-radius: 50%;
+    color: #000;
+    width: 3.21rem;
+    height: 3.21rem;
+}
+
+@media (orientation: landscape) {
+    #cover h1 span {
+        margin: 0.05rem;
+    }
+
+    #cover {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #cover div {
+        padding: 1rem;
+    }
+}
+
+@media (orientation: portrait) {
+    #cover h1 span {
+        margin: 0.1vw;
+    }
+
+    #cover {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    #cover div {
+        place-self: end;
+        width: 100%;
+        padding: 2.5vw 5vw;
+    }
+}
+
+
+#cover h3 b,
+#types div b,
+#closeBtn {
+    font-size: 200%;
+}
+
+#by,
+#who {
+    font-size: 150%;
+}
+
+#cover h2 {
+    font-size: 100%;
+}
+
+#cover h4,
+#cover p,
+#cover span {
+    font-size: 90%;
+}
+
+#cover h2,
+#who {
+    line-height: 200%;
+}
+
+#cover h3 {
+    width: 100%;
+}
+
+#modal {
+    min-width: max-content;
+}
+
+#cover h4,
+#types div p {
+    text-align: center;
+}
+
+#by::before,
+#who::before {
+    content: "{ ";
+    font-weight: 700;
+}
+
+#by::after,
+#who::after {
+    content: " }";
+    font-weight: 700;
+}
+
+#closeBtn {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: red;
+    outline: none;
+    padding: 0;
+    margin: 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
