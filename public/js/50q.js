@@ -76,19 +76,18 @@ function all50Q(q) {
             hiddenAll.forEach(all => {
                 all.hidden = true;
                 all.style.display = "none";
-            })
-            const thisA = anser.getAttribute('for');
+            });
+
             const targetId = `#${anser.dataset.value}`;
             const targetElement = document.querySelector(targetId);
-            document.querySelector(targetId).hidden = false
-            document.querySelector(targetId).style.display = "grid"
-            document.querySelector(targetId).style.minHeight = "100vh"
+            document.querySelector(targetId).hidden = false;
+            document.querySelector(targetId).style.display = "grid";
+            document.querySelector(targetId).style.minHeight = "100vh";
             const targetOffsetTop = window.scrollY + targetElement.getBoundingClientRect().top;
             window.scrollTo({
                 top: targetOffsetTop,
                 behavior: "smooth"
             });
-            console.log(thisA)
         });
     });
 }
@@ -96,10 +95,7 @@ function all50Q(q) {
 index50Q()
 
 document.addEventListener('readystatechange', event => {
-    if (event.target.readyState === 'loading') {
-        // 文書の読み込み中に実行する
-
-    } else if (event.target.readyState === 'interactive') {
+    if (event.target.readyState === 'interactive') {
         const start = document.querySelector('#cover h1');
         const cover = document.querySelector('#cover');
 
@@ -111,8 +107,8 @@ document.addEventListener('readystatechange', event => {
 
             if (cover.className === 'restart') {
                 Q1.hidden = false;
-                Q1.style.display = "grid"
-                Q1.style.minHeight = "100vh"
+                Q1.style.display = "grid";
+                Q1.style.minHeight = "100vh";
 
                 const targetOffsetTop = window.scrollY + Q1.getBoundingClientRect().top;
                 window.scrollTo({
@@ -122,7 +118,7 @@ document.addEventListener('readystatechange', event => {
 
                 types.forEach(type => {
                     type.hidden = true;
-                    type.style.display = "none"
+                    type.style.display = "none";
                 })
             } else {
                 questions.forEach(question => {
@@ -132,8 +128,8 @@ document.addEventListener('readystatechange', event => {
 
                 types.forEach(type => {
                     type.hidden = false;
-                    type.style.display = "grid"
-                    type.style.minHeight = "100vh"
+                    type.style.display = "grid";
+                    type.style.minHeight = "100vh";
                 })
 
                 window.scrollTo({
@@ -152,18 +148,18 @@ document.addEventListener('readystatechange', event => {
             }
         }
 
-        const typeAll = document.querySelectorAll('#types div');
-        typeAll.forEach(i => {
-            i.addEventListener('click', () => {
-                onModal()
-                const who = document.querySelector('#who');
-                who.textContent = i.dataset.name
-            });
-        });
-
         const closeBtn = document.querySelector('#closeBtn');
         closeBtn.addEventListener('click', () => {
             dialogModal.close();
+        });
+
+        const typeAll = document.querySelectorAll('#types div');
+        typeAll.forEach(type => {
+            type.addEventListener('click', () => {
+                onModal()
+                const who = document.querySelector('#who');
+                who.textContent = type.dataset.name;
+            });
         });
     }
 });

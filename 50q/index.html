@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../public/js/50q.js"></script>
+    <script>
+        index50Q('aaacck2xw/index.json')
+    </script>
+
+    <!--og:meta-->
+    <meta content="website" property="og:type">
+    <title>i choose | 50の質問に答える Answer 50 Questions</title>
+    <meta content="i choose | 50の質問に答える Answer 50 Questions" property="og:title">
+    <meta content="これは、創造的チャレンジへの積極性を養い、従来の価値観／方法にとらわれない開かれた考え方を養うことを目的とする創造的娯楽ゲームです。" name="description">
+    <meta content="これは、創造的チャレンジへの積極性を養い、従来の価値観／方法にとらわれない開かれた考え方を養うことを目的とする創造的娯楽ゲームです。" name="og:description">
+
+    <!--for Twitter-->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://the-answers-are-always-inside-of-you.github.io/" property="og:url">
+    <meta content="https://the-answers-are-always-inside-of-you.github.io/public/logo/000.jpeg" property="og:image">
+    <meta content="https://the-answers-are-always-inside-of-you.github.io/public/logo/000.jpeg"
+        name="twitter:image:src">
+
+    <link rel="icon" href="../public/logo/icon.png" type="image/png">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/cover.css">
+    <link rel="stylesheet" href="../public/css/50q.css">
+    <link rel="stylesheet" href="../public/css/questions.css">
+</head>
+
+<body>
+    <header id="cover">
+        <h1 class="dot">ichoose.pe.hu</h1>
+        <div>
+            <h2>
+                <u>These 50 questions were created by</u><br>
+                これは、
+                <b id="by" class="pehu">∧°┐</b><br>
+                が考えた 50の質問 です。
+            </h2>
+            <p>
+                <u>These questions have Two Answers.</u><br>
+                質問の答えは全て二択です。
+            </p>
+            <p>You Choose The Answer, It takes you to next question.</p>
+            <p>どちらかの答えを選択すると、次の質問へ進みます。</p>
+        </div>
+        <div>
+            <h3>
+                <span>
+                    As you answer questions and move on,<br>
+                    質問に答えて進むと、
+                </span>
+                <span>You will reach either of</span>
+            </h3>
+            <h3 id="name"></h3>
+            <h4>
+                のうちのいずれかにたどり着きます。<br />
+                Let's see what type you might be.<br />
+                さて、あなたは何タイプでしょうか？
+            </h4>
+        </div>
+    </header>
+
+    <main id="questions"></main>
+
+    <footer id="types"></footer>
+
+    <dialog id="modal" class="dot">
+        <button type="button" id="closeBtn">×</button>
+        <p>
+            <u>Your Answer is the most similar to</u><br />
+            <small>あなたの答えは、この50の質問を考えた人たちのうち</small><br>
+            <b id="who"></b><br />
+            among the people who thought of this 50 questions.<br>
+            <small>に、一番似ています。</small>
+        </p>
+    </dialog>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../public/logo/jquery.arctext.js"></script>
+    <script>
+        $('h1').arctext({ radius: 75 });
+    </script>
+</body>
+
+</html>

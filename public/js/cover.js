@@ -10,6 +10,7 @@ function sentenceGenerator() {
   const cover = document.querySelector("#cover")
   let sentence = `url(${randomBG(randomBGArr)})`;
   cover.style.backgroundImage = sentence;
+  cover.style.backgroundSize = "cover";
   cover.style.transition = "2s";
 }
 

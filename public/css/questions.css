@@ -19,7 +19,7 @@
 .question section {
     display: flex;
     flex-flow: wrap;
-    gap: 1rem;
+    gap: 0 1rem;
     justify-content: space-around;
     position: relative;
     width: 100%;
@@ -34,7 +34,6 @@
 }
 
 .question section input+label,
-.question section a,
 .question small {
     padding: 0.5rem;
 }
@@ -53,25 +52,34 @@
         gap: 1rem;
     }
 
-    .question section input+label,
-    .question section a {
+    .question section input+label {
         padding: 1.5rem 0.5rem;
     }
 }
 
 @media print {
     .question {
+        display: grid;
+        font-size: 65%;
         height: 50vh;
         min-height: 50vh;
         max-height: 50vh;
     }
 
+    .question section {
+        flex-flow: wrap;
+    }
+
     .question h3 {
-        margin-top: 2.5rem;
+        margin: 0;
     }
 
     .question h3 small {
-        margin-top: 5rem;
+        margin-top: 1rem;
+    }
+
+    .question section input+label {
+        padding: 0;
     }
 }
 

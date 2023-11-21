@@ -10,6 +10,14 @@ html {
     transform: scaleX(-1);
 }
 
+#cover h1:hover {
+    cursor: pointer;
+}
+
+#cover h1:hover::after {
+    color: red;
+}
+
 #cover h1::after {
     content: "Let's Start";
 }
@@ -48,8 +56,14 @@ html {
     font-family: "Times Dot", "Times New Roman", Times, serif;
 }
 
+#cover h3 b,
+#types div b {
+    font-family: "Times New Roman", Times, serif;
+}
+
 #cover h3 {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between;
 }
@@ -67,8 +81,16 @@ html {
     border: solid 0.2rem red;
     border-radius: 50%;
     color: #000;
-    width: 3.21rem;
-    height: 3.21rem;
+}
+
+#cover h3 b {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+#types div b {
+    width: 4.5rem;
+    height: 4.5rem;
 }
 
 @media (orientation: landscape) {
@@ -102,8 +124,11 @@ html {
     }
 }
 
+#cover h3 b {
+    font-size: 155%;
+    font-weight: 500;
+}
 
-#cover h3 b,
 #types div b,
 #closeBtn {
     font-size: 200%;
@@ -134,12 +159,19 @@ html {
 }
 
 #modal {
+    border: solid 0.1rem;
+    padding: 0 1rem;
     min-width: max-content;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(0.25rem);
 }
 
 #cover h4,
 #types div p {
     text-align: center;
+    line-height: 200%;
 }
 
 #by::before,
@@ -165,4 +197,35 @@ html {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+@media print {
+    #cover {
+        height: auto;
+        max-height: auto;
+    }
+
+    #cover h1 {
+        display: none;
+    }
+
+    #cover div {
+        font-size: 75%;
+        padding: 1rem 2.5rem 0;
+        width: 100%;
+    }
+
+    #cover {
+        page-break-after: always;
+    }
+
+    #questions,
+    #types {
+        page-break-before: always;
+    }
+
+    #questions article,
+    #types div {
+        height: 50vh;
+    }
 }
