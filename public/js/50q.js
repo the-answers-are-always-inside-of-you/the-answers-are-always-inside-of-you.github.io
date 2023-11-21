@@ -32,6 +32,26 @@ function by50Q(by) {
         youare.dataset.name = type.name;
         youare.dataset.url = type.url;
         types.appendChild(youare);
+        
+        const dialogModal = document.querySelector('#modal');
+        function onModal() {
+            if (typeof dialogModal.showModal === "function") {
+                dialogModal.showModal();
+            } else {
+                alert("The <dialog> API is not supported by this browser");
+            }
+        }
+
+        const closeBtn = document.querySelector('#closeBtn');
+        closeBtn.addEventListener('click', () => {
+            dialogModal.close();
+        });
+
+        type.addEventListener('click', () => {
+            onModal()
+            const who = document.querySelector('#who');
+            who.textContent = type.dataset.name;
+        });
     }
 }
 
@@ -139,27 +159,6 @@ document.addEventListener('readystatechange', event => {
             }
         });
     } else if (event.target.readyState === 'complete') {
-        const dialogModal = document.querySelector('#modal');
-        function onModal() {
-            if (typeof dialogModal.showModal === "function") {
-                dialogModal.showModal();
-            } else {
-                alert("The <dialog> API is not supported by this browser");
-            }
-        }
-
-        const closeBtn = document.querySelector('#closeBtn');
-        closeBtn.addEventListener('click', () => {
-            dialogModal.close();
-        });
-
-        const typeAll = document.querySelectorAll('#types div');
-        typeAll.forEach(type => {
-            type.addEventListener('click', () => {
-                onModal()
-                const who = document.querySelector('#who');
-                who.textContent = type.dataset.name;
-            });
-        });
+        //
     }
 });
