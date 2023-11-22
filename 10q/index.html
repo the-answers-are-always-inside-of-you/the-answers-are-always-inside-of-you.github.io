@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../public/js/10q.js"></script>
+    <script>
+        index10Q('index.json')
+    </script>
+
+    <!--og:meta-->
+    <meta content="website" property="og:type">
+    <title>これは、 Your Name が考えた 10の質問 です。</title>
+    <meta content="これは、 Your Name が考えた 10の質問 です。" property="og:title">
+    <meta content="These 10 questions were created by Your Name" name="description">
+    <meta content="These 10 questions were created by Your Name" name="og:description">
+
+    <!--for Twitter-->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="10q/sample/" property="og:url">
+    <meta content="10q/sample/cover.png" property="og:image">
+    <meta content="10q/sample/cover.png" name="twitter:image:src">
+
+    <link rel="icon" href="../public/logo/icon.png" type="image/png">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/cover.css">
+    <link rel="stylesheet" href="../public/css/questions.css">
+    <link rel="stylesheet" href="../public/css/10q.css">
+</head>
+
+<body>
+    <header id="cover">
+        <h1 class="dot">ichoose.pe.hu</h1>
+        <div>
+            <h2>
+                <u>These 10 questions were created by</u><br>
+                これは、
+                <b id="by"></b><br>
+                が考えた 10の質問 です。
+            </h2>
+        </div>
+        <div>
+            <h3>
+                <u id="as"></u><br>
+                <small id="text"></small>
+            </h3>
+            <p id="link"></p>
+        </div>
+    </header>
+
+    <form id="questions"></form>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../public/logo/jquery.arctext.js"></script>
+    <script>
+        $('h1').arctext({ radius: 75 });
+    </script>
+</body>
+
+</html>

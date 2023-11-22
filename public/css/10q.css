@@ -1,0 +1,98 @@
+#cover h2 {
+    font-family: "Times Dot", "Times New Roman", Times, serif;
+}
+
+#cover h3,
+#cover a,
+#by {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#cover h1 {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+
+#by {
+    font-size: 150%;
+    font-weight: 500;
+}
+
+#cover h2 {
+    font-size: 125%;
+}
+
+#cover h3,
+#cover h3 small {
+    font-size: 111%;
+}
+
+#cover h3 u {
+    font-size: 90%;
+}
+
+#cover h2 {
+    line-height: 200%;
+}
+
+#cover a {
+    display: inline-block;
+    border: solid 1px;
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+#by::before {
+    content: "{ ";
+    font-weight: 700;
+}
+
+#by::after {
+    content: " }";
+    font-weight: 700;
+}
+
+#cover div {
+    max-width: 500px;
+}
+
+@media (orientation: portrait) {
+    #cover div {
+        max-width: 75%;
+    }
+}
+
+@media print {
+    #cover {
+        height: auto;
+        max-height: auto;
+    }
+
+    #cover h1 {
+        display: none;
+    }
+
+    #cover div {
+        font-size: 75%;
+        padding: 1rem 2.5rem 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #cover {
+        page-break-after: always;
+    }
+
+    #questions,
+    #types {
+        page-break-before: always;
+    }
+
+    #questions article,
+    #types div {
+        height: 50vh;
+    }
+}

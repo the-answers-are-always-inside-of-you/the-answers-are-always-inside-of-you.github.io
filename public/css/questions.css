@@ -4,6 +4,12 @@
 }
 
 .question {
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+.question {
     font-family: "Times Dot", "Times New Roman", Times, serif;
     display: grid;
     place-items: center;
@@ -11,15 +17,10 @@
     min-height: 100vh;
 }
 
-[hidden],
-.question section input {
-    display: none;
-}
-
 .question section {
     display: flex;
     flex-flow: wrap;
-    gap: 0 1rem;
+    gap: 1rem;
     justify-content: space-around;
     position: relative;
     width: 100%;
@@ -133,4 +134,9 @@ a:hover,
 input+label:hover,
 input:checked+label {
     color: red;
+}
+
+[hidden],
+.question section input {
+    display: none;
 }
