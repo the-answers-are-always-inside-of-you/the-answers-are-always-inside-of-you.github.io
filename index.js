@@ -7,8 +7,6 @@ const server = http.createServer((req, res) => {
     var filePath = "." + req.url;
     if (filePath == "./") {
         filePath = "./index.html";
-    } else if (filePath == "./50q/") {
-        filePath = "./50q/index.html";
     }
 
     var extname = String(path.extname(filePath)).toLowerCase();
